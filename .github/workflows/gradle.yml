@@ -26,7 +26,7 @@ jobs:
     services:
       xvfb:
        image: selenium/standalone-chrome:latest
-       options: -e VNC_SERVER=true-e VNC_PORT=5900
+       options: -e VNC_SERVER=true -e VNC_PORT=5900
 
     steps:
     - name: Start Xvfb
