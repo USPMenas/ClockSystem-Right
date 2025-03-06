@@ -24,10 +24,10 @@ jobs:
       contents: read
   
 
-    # services:
-    #   xvfb:
-    #    image: selenium/standalone-chrome:latest
-    #    options: -e VNC_SERVER=true -e VNC_PORT=5900
+    services:
+      xvfb:
+        image: selenium/standalone-chrome:latest
+        options: -e VNC_SERVER=true -e VNC_PORT=5900
 
     steps:
     - uses: actions/checkout@v4
